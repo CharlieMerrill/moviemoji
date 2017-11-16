@@ -1,45 +1,61 @@
-.well-image{
-    width: 100%;
-    height: 162px;
-}
-.top-buffer{
-    margin-top: 30px;
-}
-.answer{
-    padding: 15px 20px;
-    border-radius: 10px;
-    border: 1px solid #bbb;
-}
-.answer:hover{
-    cursor: pointer;
-}
-.image-answer{
-    cursor: pointer;
-    height: 350px;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-.image-answer img{
-    width: 100%;
-    height: auto;
-}
-.image-selected{
-    border: 3px solid #56afdc;
-}
-.image-answer.bg-success{
-    border: 3px solid #5ea640;
-}
-.image-answer.bg-danger{
-    border: 3px solid #b74848;
+.banner {
+  min-height: 500px;
+  height: 100vh;
+  margin-top: -20px;
 }
 
-.emoji-div {
-  display: inline;
+.flex-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.title {
+  color: white;
+  text-align: center;
+}
+
+.start-btn {
+  padding: 10px;
+  margin: 10px;
+}
+
+.quiz-box {
+  margin: 0 auto;
+  width: 60%;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
 }
 
 .emoji {
   height: 50px;
   width: 50px;
+}
+
+.answer-bar {
+  margin: 15px;
+  text-align: center;
+}
+
+.see-answer {
+  color: blue;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.see-answer:hover {
+  text-decoration: underline blue;
+  cursor: pointer;
+}
+
+.buttons button {
+  display: block;
+  margin: 10px auto;
+  width: 60%;
+}
+
+.results {
+
 }
