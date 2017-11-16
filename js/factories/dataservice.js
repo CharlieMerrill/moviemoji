@@ -1458,24 +1458,7 @@
             correct: null,
             correctAnswer: ["Madagascar", "madagascar"],
             answered: false
-        },
-        {
-            emojis: [
-              {
-                emoji: "emojis/"
-              },
-              {
-                emoji: "emojis/"
-              },
-              {
-                emoji: "emojis/"
-              }
-            ],
-            selected: "",
-            correct: null,
-            correctAnswer: [],
-            answered: false
-        },
+        }
     ];
 
 })();

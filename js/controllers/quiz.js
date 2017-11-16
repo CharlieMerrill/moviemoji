@@ -10,15 +10,17 @@
 
         var vm = this;
 
-        vm.quizMetrics = quizMetrics; // Attaching the quizMetrics object to the view model
+        vm.quizMetrics = quizMetrics;
         vm.dataService = DataService;
-        vm.questionAnswered = questionAnswered; // also a named function defined below
-        vm.setActiveQuestion = setActiveQuestion; // setActiveQuestion is a named function below
-        vm.selectAnswer = selectAnswer; // also a named function
-        vm.finaliseAnswers = finaliseAnswers; //also a named function
-        vm.activeQuestion = 0; // currently active question in the quiz
+        vm.questionAnswered = questionAnswered;
+        vm.setActiveQuestion = setActiveQuestion;
+        vm.selectAnswer = selectAnswer;
+        vm.finaliseAnswers = finaliseAnswers;
+        vm.revealAnswer = revealAnswer;
+        vm.activeQuestion = Math.floor(Math.random() * DataService.quizQuestions.length);
         vm.finalise = false;
         vm.showAnswer = false;
+        vm.hideSubmit = false;
         vm.correctCount = 0;
         vm.wrongCount = 0;
         vm.questionCount = 1;
@@ -27,8 +29,10 @@
         var numQuestionsAnswered = 0;
 
         function setActiveQuestion(){
+          DataService.quizQuestions.splice(vm.activeQuestion, 1);
           vm.activeQuestion = Math.floor(Math.random() * DataService.quizQuestions.length);
           vm.questionCount += 1;
+          vm.hideSubmit = false;
         }
 
         function questionAnswered(){
@@ -39,7 +43,6 @@
 
         function selectAnswer(answer){
             DataService.quizQuestions[vm.activeQuestion].selected = answer;
-            vm.showAnswer = true;
             if(DataService.quizQuestions[vm.activeQuestion].correctAnswer.indexOf(answer.toLowerCase()) > -1){
               vm.correctCount += 1;
             }else{
@@ -55,6 +58,11 @@
             quizMetrics.markQuiz();
             quizMetrics.changeState("quiz", false);
             quizMetrics.changeState("results", true);
+        }
+
+        function revealAnswer(){
+          vm.showAnswer = true;
+          vm.hideSubmit = true;
         }
     }
 

@@ -42,7 +42,7 @@
                                 <div class="col-sm-6">
                                   <form>
                                     <input ng-model="answer">
-                                    <input type="button" ng-click="quiz.selectAnswer(answer)" value="Submit">
+                                    <input type="button" ng-click="quiz.selectAnswer(answer)" ng-hide="quiz.hideSubmit" value="Submit">
                                   </form>
                                   <p ng-show="quiz.showAnswer">{{ quiz.dataService.quizQuestions[quiz.activeQuestion].correctAnswer[0] }}</p>
                                 </div>
@@ -50,7 +50,7 @@
 
                         </div>
                     </div>
-
+                    <button class="btn btn-warning" ng-click="quiz.revealAnswer();">See Answer</button>
                     <button class="btn btn-warning" ng-click="quiz.questionAnswered(); answer = ''">Next Movie</button>
                 </div>
 
