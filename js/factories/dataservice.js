@@ -525,7 +525,7 @@
             ],
             selected: "",
             correct: null,
-            correctAnswer: ["My Big Fat Greek Wedding", "my big fat greek wedding"],
+            correctAnswer: ["My Big Fat Greek Wedding", "my big fat greek wedding", "big fat greek wedding"],
             answered: false
         },
         {
@@ -610,7 +610,7 @@
             ],
             selected: "",
             correct: null,
-            correctAnswer: ["Coming to American", "coming to america"],
+            correctAnswer: ["Coming to America", "coming to america"],
             answered: false
         },
         {

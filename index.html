@@ -13,13 +13,13 @@
 <body>
   <div class="banner" style="background: url(images/cinemabackground.jpg) no-repeat center center">
     <div class="title">
-      <h1>moviemoji</h1>
-      <h3>Guess movies from emojis</h3>
+      <img src="images/moviemoji-logo.png" alt="moviemoji-logo" class="logo">
+      <h3 class="description">Guess movies from emojis</h3>
     </div>
     <div class="flex-center" ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive || list.quizMetrics.resultsActive">
       <button class="btn btn-warning start-btn"
                 ng-click="list.activateQuiz()">
-        <strong>Start Quiz</strong>
+        <strong><span class="glyphicon glyphicon-play"></span> Play</strong>
       </button>
     </div>
 
@@ -32,9 +32,9 @@
       -->
       <div ng-hide="quiz.finalise" class="quiz-box">
         <div class="row">
-          <div class="col-xs-2">
-            <p>Correct:</p>
-            <p>2</p>
+          <div class="col-xs-2 info">
+            <h4>Score:</h4>
+            <h1>{{ quiz.correctCount }}</h1>
           </div>
           <div class="col-xs-8">
             <div class="flex-center">
@@ -44,23 +44,25 @@
             </div>
           </div>
 
-          <div class="col-xs-2">
-            <p>Question:</p>
-            <p>0/10</p>
+          <div class="col-xs-2 info">
+            <h4>Question:</h4>
+            <h1>{{ quiz.questionCount }}/10</h1>
           </div>
         </div>
 
         <div class="answer-bar flex-center">
           <form>
+            <p ng-show="quiz.showAnswer"><b>{{ quiz.dataService.quizQuestions[quiz.activeQuestion].correctAnswer[0] }}</b></p>
             <input ng-model="answer">
-            <input type="button" ng-click="quiz.selectAnswer(answer)" ng-hide="quiz.hideSubmit" value="Submit">
+            <input type="button" class="submit" ng-click="quiz.selectAnswer(answer)" ng-hide="quiz.hideSubmit" value="Submit">
+            <span class="glyphicon glyphicon-ok check" ng-show="quiz.correct"></span>
+            <span class="glyphicon glyphicon-remove cross" ng-show="quiz.wrong"></span>
             <p ng-click="quiz.revealAnswer();" class="see-answer">See Answer?</p>
-            <p ng-show="quiz.showAnswer">{{ quiz.dataService.quizQuestions[quiz.activeQuestion].correctAnswer[0] }}</p>
           </form>
         </div>
         <div class="buttons">
-          <button class="btn" ng-click="quiz.questionAnswered(); answer = ''">Next Movie</button>
-          <button class="btn" ng-click="quiz.finaliseAnswers()">End Quiz</button>
+          <button class="next-button" ng-click="quiz.questionAnswered(); answer = ''"><span class="glyphicon glyphicon-forward"></span> Next Movie</button>
+          <button class="end-button" ng-click="quiz.finaliseAnswers()"><span class="glyphicon glyphicon-stop"></span> End Quiz</button>
         </div>
 
       </div>
