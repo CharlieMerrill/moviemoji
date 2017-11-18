@@ -2100,7 +2100,7 @@
                 emoji: "emojis/nature/water-wave.png"
               },
               {
-                emoji: "emojis/travel/travel/sailboat.png"
+                emoji: "emojis/travel/sailboat.png"
               },
               {
                 emoji: "emojis/animals/elephant.png"

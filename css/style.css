@@ -70,10 +70,6 @@
   background-color: #4C4C4C;
 }
 
-.submit:focus {
-  outline: 0;
-}
-
 .submit:active {
   box-shadow: 0px 0px 3px black;
 }
@@ -118,10 +114,6 @@
   color: white;
 }
 
-.next-button:focus {
-  outline: 0;
-}
-
 .end-button {
   background-color: white;
   border: 1px solid #DB0707;
@@ -136,6 +128,27 @@
   color: white;
 }
 
-.end-button:focus {
+.no-focus:focus {
   outline: 0;
+}
+
+.emoji-results {
+  height: 80px;
+  width: 80px;
+}
+
+.play-again {
+  width: 300px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid #ED9B08;
+  color: #ED9B08;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.play-again:hover {
+  background-color: #ED9B08;
+  color: white;
 }
