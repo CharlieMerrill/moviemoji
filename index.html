@@ -54,34 +54,39 @@
           <form>
             <p ng-show="quiz.showAnswer"><b>{{ quiz.dataService.quizQuestions[quiz.activeQuestion].correctAnswer[0] }}</b></p>
             <input ng-model="answer">
-            <input type="button" class="submit" ng-click="quiz.selectAnswer(answer)" ng-hide="quiz.hideSubmit" value="Submit">
+            <input type="button" class="submit no-focus" ng-click="quiz.selectAnswer(answer)" ng-hide="quiz.hideSubmit" value="Submit">
             <span class="glyphicon glyphicon-ok check" ng-show="quiz.correct"></span>
             <span class="glyphicon glyphicon-remove cross" ng-show="quiz.wrong"></span>
             <p ng-click="quiz.revealAnswer();" class="see-answer">See Answer?</p>
           </form>
         </div>
         <div class="buttons">
-          <button class="next-button" ng-click="quiz.questionAnswered(); answer = ''"><span class="glyphicon glyphicon-forward"></span> Next Movie</button>
-          <button class="end-button" ng-click="quiz.finaliseAnswers()"><span class="glyphicon glyphicon-stop"></span> End Quiz</button>
+          <button class="next-button no-focus" ng-click="quiz.questionAnswered(); answer = ''"><span class="glyphicon glyphicon-forward"></span> Next Movie</button>
+          <button class="end-button no-focus" ng-click="quiz.finaliseAnswers()"><span class="glyphicon glyphicon-stop"></span> End Quiz</button>
         </div>
 
       </div>
 
-    </div><!-- quiz controller -->
-
-    <div ng-controller="resultsCtrl as results" ng-show="results.quizMetrics.resultsActive">
-      <div class="quiz-box results">
-        <h2>Results</h2>
-        <h2>You Scored {{results.quizMetrics.numCorrect}} / {{results.dataService.quizQuestions.length}}</h2>
-        <h2><strong>{{results.calculatePerc() | number:2}}%</strong></h2>
-        <input type="button" value="Play Again" onClick="window.location.reload()">
-        <br>
-        <!--
-        <button class="btn btn-primary btn-lg" ng-click="results.reset()">Go Back To Facts</button>
-        -->
+      <div ng-show="quiz.finalise">
+        <div class="quiz-box results">
+          <div>
+            <img ng-src="{{ quiz.emoji1 }}" class="emoji-results">
+            <img ng-src="{{ quiz.emoji2 }}" class="emoji-results">
+            <img ng-src="{{ quiz.emoji3 }}" class="emoji-results">
+            <img ng-src="{{ quiz.emoji4 }}" class="emoji-results">
+            <img ng-src="{{ quiz.emoji5 }}" class="emoji-results">
+          </div>
+          <h2>You Scored {{ quiz.correctCount }} / 10</h2>
+          <br>
+          <h5>"<i>{{ quiz.quote }}</i>"</h5>
+          <button class="play-again" onClick="window.location.reload()"><span class="glyphicon glyphicon-fast-backward"></span> Play Again</button>
+          <br>
+          <!--
+          <button class="btn btn-primary btn-lg" ng-click="results.reset()">Go Back To Facts</button>
+          -->
+        </div>
       </div>
-    </div>
-
+    </div><!-- quiz controller -->
   </div>
 
 
