@@ -22,17 +22,24 @@
         vm.showAnswer = false;
         vm.hideSubmit = false;
         vm.correctCount = 0;
-        vm.wrongCount = 0;
         vm.questionCount = 1;
         vm.accuracy = 0;
+        vm.correct = false;
+        vm.wrong = false;
 
         var numQuestionsAnswered = 0;
 
         function setActiveQuestion(){
+          if(vm.questionCount === 10){
+            finaliseAnswers();
+          } else {
           DataService.quizQuestions.splice(vm.activeQuestion, 1);
           vm.activeQuestion = Math.floor(Math.random() * DataService.quizQuestions.length);
           vm.questionCount += 1;
           vm.hideSubmit = false;
+          vm.wrong = false;
+          vm.correct = false;
+          }
         }
 
         function questionAnswered(){
@@ -45,8 +52,12 @@
             DataService.quizQuestions[vm.activeQuestion].selected = answer;
             if(DataService.quizQuestions[vm.activeQuestion].correctAnswer.indexOf(answer.toLowerCase()) > -1){
               vm.correctCount += 1;
+              vm.wrong = false;
+              vm.correct = true;
+              vm.hideSubmit = true;
+              revealAnswer();
             }else{
-              vm.wrongCount += 1;
+              vm.wrong = true;
             }
             vm.accuracy = (vm.correctCount / vm.questionCount) * 100;
         }
