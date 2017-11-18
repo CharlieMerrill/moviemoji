@@ -73,7 +73,7 @@
             ],
             selected: "",
             correct: null,
-            correctAnswer: ["Planes, Trains and Automobiles", "planes, trains and automobiles", "planes trains and automobiles", "planes, trains, and automobiels", "planes, trains, & automobiles", "planes, trains & automobiles", "planes trains & automobiles", "planes trains automobiles"],
+            correctAnswer: ["Planes, Trains and Automobiles", "planes, trains and automobiles", "planes trains and automobiles", "planes, trains, and automobiles", "planes, trains, & automobiles", "planes, trains & automobiles", "planes trains & automobiles", "planes trains automobiles"],
             answered: false
         },
         {
@@ -280,7 +280,7 @@
                 emoji: "emojis/nature/sun-behind-cloud.png"
               },
               {
-                emoji: "emojis/symbols/down-arrow.png"
+                emoji: "emojis/nature/fallen-leaf.png"
               }
             ],
             selected: "",
@@ -568,13 +568,10 @@
                 emoji: "emojis/people/bride.png"
               },
               {
-                emoji: "emojis/travel/oncoming-automobile.png"
-              },
-              {
                 emoji: "emojis/symbols/collision.png"
               },
               {
-                emoji: "emojis/travel/recreational-vehicle.png"
+                emoji: "emojis/symbols/collision.png"
               }
             ],
             selected: "",
@@ -1457,6 +1454,673 @@
             selected: "",
             correct: null,
             correctAnswer: ["Madagascar", "madagascar"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/flags/kazakhstan.png"
+              },
+              {
+                emoji: "emojis/people/man.png"
+              },
+              {
+                emoji: "emojis/symbols/thumbs-up.png"
+              },
+              {
+                emoji: "emojis/symbols/right-arrow.png"
+              },
+              {
+                emoji: "emojis/flags/usa.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Borat", "borat", "borat: cultural learnings of america for make benefit glorious nation of kazakhstan", "borat cultural learnings of america for make benefit glorious nation of kazakhstan"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/objects/karate-uniform.png"
+              },
+              {
+                emoji: "emojis/people/fist.png"
+              },
+              {
+                emoji: "emojis/animals/panda.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Kung Fu Panda", "kung fu panda"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/fist.png"
+              },
+              {
+                emoji: "emojis/objects/boxing-glove.png"
+              },
+              {
+                emoji: "emojis/objects/karate-uniform.png"
+              },
+              {
+                emoji: "emojis/symbols/club.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Fight Club", "fight club"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/animals/octopus.png"
+              },
+              {
+                emoji: "emojis/animals/cat.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Octopussy", "octopussy"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/food/pineapple.png"
+              },
+              {
+                emoji: "emojis/travel/steam-locomotive.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Pineapple Express", "pineapple express"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/flags/australia.png"
+              },
+              {
+                emoji: "emojis/animals/crocodile.png"
+              },
+              {
+                emoji: "emojis/people/cowboy.png"
+              },
+              {
+                emoji: "emojis/symbols/right-arrow.png"
+              },
+              {
+                emoji: "emojis/flags/usa.png"
+              },
+              {
+                emoji: "emojis/travel/statue-of-liberty.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Crocodile Dundee", "crocodile dundee"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/symbols/white.png"
+              },
+              {
+                emoji: "emojis/travel/house.png"
+              },
+              {
+                emoji: "emojis/symbols/down-arrow.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["White House Down", "white house down", "whitehouse down"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/travel/traffic-light.png"
+              },
+              {
+                emoji: "emojis/travel/police-car.png"
+              },
+              {
+                emoji: "emojis/travel/automobile.png"
+              },
+              {
+                emoji: "emojis/travel/lorry.png"
+              },
+              {
+                emoji: "emojis/travel/recreational-vehicle.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Traffic", "traffic"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/pilot.png"
+              },
+              {
+                emoji: "emojis/flags/usa.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Captain America", "captain america"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/travel/automobile.png"
+              },
+              {
+                emoji: "emojis/people/older-woman.png"
+              },
+              {
+                emoji: "emojis/nature/blossom.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Driving Miss Daisy", "driving miss daisy"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/poop.png"
+              },
+              {
+                emoji: "emojis/people/dancer.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Dirty Dancing", "dirty dancing"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/angry-face.png"
+              },
+              {
+                emoji: "emojis/animals/ox.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Raging Bull", "raging bull"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/nature/flame.png"
+              },
+              {
+                emoji: "emojis/animals/chick.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["The Hot Chick", "hot chick", "the hot chick"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/screaming-face.png"
+              },
+              {
+                emoji: "emojis/objects/film.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Scary Movie", "scary movie"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/travel/house.png"
+              },
+              {
+                emoji: "emojis/symbols/white.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Casablanca", "casablanca", "casa blanca"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/travel/bus.png"
+              },
+              {
+                emoji: "emojis/symbols/dash.png"
+              },
+              {
+                emoji: "emojis/objects/bomb.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Speed", "speed"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/food/ice-cream.png"
+              },
+              {
+                emoji: "emojis/nature/sun-behind-cloud.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Vanilla Sky", "vanilla sky"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/travel/automobile.png"
+              },
+              {
+                emoji: "emojis/symbols/collision.png"
+              },
+              {
+                emoji: "emojis/travel/recreational-vehicle.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Crash", "crash"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/pedestrian.png"
+              },
+              {
+                emoji: "emojis/symbols/minus.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Walk the Line", "walk the line"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/objects/clock.png"
+              },
+              {
+                emoji: "emojis/food/tangerine.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["A Clockwork Orange", "a clockwork orange", "clockwork orange"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/princess.png"
+              },
+              {
+                emoji: "emojis/objects/memo.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["The Princess Diaries", "the princess diaries", "princess diaries"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/ghost.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Ghost", "ghost"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/graduate.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["The Graduate", "the graduate", "graduate"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/nature/volcano.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Volcano", "volcano"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/mechanic"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["The Mechanic", "the mechanic", "mechanic"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/artist.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["The Artist", "the artist", "artist"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/cop.png"
+              },
+              {
+                emoji: "emojis/objects/graduation-cap.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Police Academy", "police academy"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/santa.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["The Santa Clause", "the santa clause", "santa clause"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/objects/ring.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["The Ring", "the ring", "ring"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/animals/lion.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Lion", "lion"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/animals/ant.png"
+              },
+              {
+                emoji: "emojis/animals/ant.png"
+              },
+              {
+                emoji: "emojis/animals/ant.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Antz", "antz"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/animals/scorpion.png"
+              },
+              {
+                emoji: "emojis/people/prince.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["The Scorpion King", "the scorpion king", "scorpion king"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/food/milk.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Milk", "milk"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/baby.png"
+              },
+              {
+                emoji: "emojis/travel/automobile.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Baby Driver", "baby driver"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/food/honey.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Honey", "honey"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/objects/dice.png"
+              },
+              {
+                emoji: "emojis/objects/slot-machine.png"
+              },
+              {
+                emoji: "emojis/objects.joker.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Casino", "casino"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/nature/clock.png"
+              },
+              {
+                emoji: "emojis/travel/map.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Cloud Atlas", "cloud atlas"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/symbols/red.png"
+              },
+              {
+                emoji: "emojis/nature/sunrise.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Red Dawn", "red dawn"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/symbols/red.png"
+              },
+              {
+                emoji: "emojis/animals/dragon.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Red Dragon", "red dragon"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/smiley-horns.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Devil", "devil"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/smiley-horns.png"
+              },
+              {
+                emoji: "emojis/people/skull-and-crossbones.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["The Evil Dead", "the evil dead", "evil dead"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/objects/syringe.png"
+              },
+              {
+                emoji: "emojis/symbols/left-arrow.png"
+              },
+              {
+                emoji: "emojis/objects/syringe.png"
+              },
+              {
+                emoji: "emojis/objects/syringe.png"
+              },
+              {
+                emoji: "emojis/objects/syringe.png"
+              },
+              {
+                emoji: "emojis/objects/syringe.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["First Blood", "first blood", "rambo: first blood", "rambo first blood", "rambo"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/objects/basketball.png"
+              },
+              {
+                emoji: "emojis/objects/memo.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["The Basketball Diaries", "the basketball diaries", "basketball diaries"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/nature/water-wave.png"
+              },
+              {
+                emoji: "emojis/travel/travel/sailboat.png"
+              },
+              {
+                emoji: "emojis/animals/elephant.png"
+              },
+              {
+                emoji: "emojis/animals/tiger.png"
+              },
+              {
+                emoji: "emojis/animals/ox.png"
+              },
+              {
+                emoji: "emojis/animals/deer.png"
+              },
+              {
+                emoji: "emojis/animals/zebra.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Noah", "noah"],
             answered: false
         }
     ];
