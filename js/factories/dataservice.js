@@ -208,7 +208,7 @@
             ],
             selected: "",
             correct: null,
-            correctAnswer: ["From Russia with Loves", "from russia with love"],
+            correctAnswer: ["From Russia with Love", "from russia with love"],
             answered: false
         },
         {
