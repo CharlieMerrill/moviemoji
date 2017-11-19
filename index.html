@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="turtleFacts">
+<html lang="en" ng-app="moviemoji">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,58 +16,85 @@
       <img src="images/moviemoji-logo.png" alt="moviemoji-logo" class="logo">
       <h3 class="description">Guess movies from emojis</h3>
     </div>
-    <div class="flex-center" ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive || list.quizMetrics.resultsActive">
-      <button class="btn btn-warning start-btn"
-                ng-click="list.activateQuiz()">
-        <strong><span class="glyphicon glyphicon-play"></span> Play</strong>
-      </button>
+    <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive || list.quizMetrics.resultsActive">
+      <br>
+      <div class="row emoji-row flex-center">
+        <img src="emojis/objects/clapperboard.png">
+        <img src="emojis/objects/movie-camera.png">
+        <img src="emojis/objects/film.png">
+        <img src="emojis/objects/projector.png">
+        <img src="emojis/objects/tv.png">
+        <img src="emojis/objects/vhs.png">
+      </div>
+      <br>
+      <br>
+      <div class="row flex-center">
+        <button class="btn btn-warning start-btn" ng-click="list.activateQuiz()">
+          <strong><span class="glyphicon glyphicon-play"></span> Play</strong>
+        </button>
+      </div>
     </div>
 
     <div ng-controller="quizCtrl as quiz" ng-show="quiz.quizMetrics.quizActive">
-      <!--
-      <p>Correct: {{ quiz.correctCount }}</p>
-      <p>Wrong: {{ quiz.wrongCount }}</p>
-      <p>Answered: {{ quiz.questionCount }}</p>
-      <p>Average: {{ quiz.accuracy }}</p>
-      -->
-      <div ng-hide="quiz.finalise" class="quiz-box">
+
+      <div ng-hide="quiz.finalize" class="quiz-box"><!-- quiz page -->
+
         <div class="row">
-          <div class="col-xs-2 info">
-            <h4>Score:</h4>
-            <h1>{{ quiz.correctCount }}</h1>
-          </div>
-          <div class="col-xs-8">
-            <div class="flex-center">
-              <div ng-repeat="image in quiz.dataService.quizQuestions[quiz.activeQuestion].emojis">
-                <img ng-src="{{ image.emoji }}" class="emoji">
-              </div>
+
+          <div class="col-sm-3 hidden-xs info"><!-- progress display -->
+            <div>
+              <h4>Score:</h4>
+              <h1>{{ quiz.correctCount }}</h1>
+            </div>
+            <hr>
+            <div>
+              <h4>Question:</h4>
+              <h1>{{ quiz.questionCount }}/10</h1>
             </div>
           </div>
 
-          <div class="col-xs-2 info">
-            <h4>Question:</h4>
-            <h1>{{ quiz.questionCount }}/10</h1>
+          <div class="col-xs-12 col-sm-9">
+
+            <div class="row"><!-- emojis -->
+              <div class="flex-center">
+                <div ng-repeat="image in quiz.dataService.quizQuestions[quiz.activeQuestion].emojis">
+                  <img ng-src="{{ image.emoji }}" class="emoji">
+                </div>
+              </div>
+            </div>
+
+            <div class="row hidden-sm hidden-md hidden-lg hidden-xl info info-mobile"><!-- mobile progress display -->
+              <div>
+                <h5>Score:</h5>
+                <h1>{{ quiz.correctCount }}</h1>
+              </div>
+              <div>
+                <h5>Question:</h5>
+                <h1>{{ quiz.questionCount }}/10</h1>
+              </div>
+            </div>
+
+            <div class="answer-bar flex-center"><!-- answer is entered here -->
+              <form>
+                <p ng-show="quiz.showAnswer"><b>{{ quiz.dataService.quizQuestions[quiz.activeQuestion].correctAnswer[0] }}</b></p>
+                <input ng-model="answer">
+                <input type="button" class="submit no-focus" ng-click="quiz.selectAnswer(answer)" ng-hide="quiz.hideSubmit" value="Submit">
+                <span class="glyphicon glyphicon-ok check" ng-show="quiz.correct"></span>
+                <span class="glyphicon glyphicon-remove cross" ng-show="quiz.wrong"></span>
+                <p ng-click="quiz.revealAnswer();" ng-hide="quiz.hideSubmit" class="see-answer">See Answer?</p>
+              </form>
+            </div>
+
+            <div class="buttons"><!-- buttons for next movie and ending the quiz -->
+              <button class="next-button no-focus" ng-click="quiz.questionAnswered(); answer = ''"><span class="glyphicon glyphicon-forward"></span> Next Movie</button>
+              <button class="end-button no-focus" ng-click="quiz.finalizeAnswers()"><span class="glyphicon glyphicon-stop"></span> End Quiz</button>
+            </div>
+
           </div>
         </div>
+      </div><!-- finish and hide quiz -->
 
-        <div class="answer-bar flex-center">
-          <form>
-            <p ng-show="quiz.showAnswer"><b>{{ quiz.dataService.quizQuestions[quiz.activeQuestion].correctAnswer[0] }}</b></p>
-            <input ng-model="answer">
-            <input type="button" class="submit no-focus" ng-click="quiz.selectAnswer(answer)" ng-hide="quiz.hideSubmit" value="Submit">
-            <span class="glyphicon glyphicon-ok check" ng-show="quiz.correct"></span>
-            <span class="glyphicon glyphicon-remove cross" ng-show="quiz.wrong"></span>
-            <p ng-click="quiz.revealAnswer();" class="see-answer">See Answer?</p>
-          </form>
-        </div>
-        <div class="buttons">
-          <button class="next-button no-focus" ng-click="quiz.questionAnswered(); answer = ''"><span class="glyphicon glyphicon-forward"></span> Next Movie</button>
-          <button class="end-button no-focus" ng-click="quiz.finaliseAnswers()"><span class="glyphicon glyphicon-stop"></span> End Quiz</button>
-        </div>
-
-      </div>
-
-      <div ng-show="quiz.finalise">
+      <div ng-show="quiz.finalize"> <!-- results page -->
         <div class="quiz-box results">
           <div>
             <img ng-src="{{ quiz.emoji1 }}" class="emoji-results">
@@ -81,11 +108,9 @@
           <h5>"<i>{{ quiz.quote }}</i>"</h5>
           <button class="play-again" onClick="window.location.reload()"><span class="glyphicon glyphicon-fast-backward"></span> Play Again</button>
           <br>
-          <!--
-          <button class="btn btn-primary btn-lg" ng-click="results.reset()">Go Back To Facts</button>
-          -->
-        </div>
-      </div>
+        </div><!-- results box -->
+      </div><!-- show results -->
+
     </div><!-- quiz controller -->
   </div>
 

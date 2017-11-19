@@ -1,7 +1,7 @@
 (function(){
 
     angular
-        .module("turtleFacts")
+        .module("moviemoji")
         .controller("quizCtrl", QuizController);
 
     QuizController.$inject = ['quizMetrics', 'DataService'];
@@ -15,12 +15,12 @@
         vm.questionAnswered = questionAnswered;
         vm.setActiveQuestion = setActiveQuestion;
         vm.selectAnswer = selectAnswer;
-        vm.finaliseAnswers = finaliseAnswers;
+        vm.finalizeAnswers = finalizeAnswers;
         vm.revealAnswer = revealAnswer;
         vm.randomQuote = randomQuote;
         vm.randomEmojis = randomEmojis;
         vm.activeQuestion = Math.floor(Math.random() * DataService.quizQuestions.length);
-        vm.finalise = false;
+        vm.finalize = false;
         vm.showAnswer = false;
         vm.hideSubmit = false;
         vm.correctCount = 0;
@@ -39,7 +39,7 @@
 
         function setActiveQuestion(){
           if(vm.questionCount === 10){
-            finaliseAnswers();
+            finalizeAnswers();
           } else {
           DataService.quizQuestions.splice(vm.activeQuestion, 1);
           vm.activeQuestion = Math.floor(Math.random() * DataService.quizQuestions.length);
@@ -53,7 +53,7 @@
         function questionAnswered(){
           vm.showAnswer = false;
           vm.setActiveQuestion();
-          vm.answer = ""
+          vm.answer = "";
         }
 
         function selectAnswer(answer){
@@ -70,8 +70,8 @@
             vm.accuracy = (vm.correctCount / vm.questionCount) * 100;
         }
 
-        function finaliseAnswers(){
-            vm.finalise = true;
+        function finalizeAnswers(){
+            vm.finalize = true;
             numQuestionsAnswered = 0;
             vm.activeQuestion = 0;
             randomQuote();
