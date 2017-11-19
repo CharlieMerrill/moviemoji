@@ -1,7 +1,7 @@
 (function(){
 
     angular
-        .module("turtleFacts")
+        .module("moviemoji")
         .factory("DataService", DataService);
 
     function DataService(){
@@ -1979,7 +1979,7 @@
                 emoji: "emojis/objects/slot-machine.png"
               },
               {
-                emoji: "emojis/objects.joker.png"
+                emoji: "emojis/objects/joker.png"
               }
             ],
             selected: "",
@@ -2329,7 +2329,7 @@
                 emoji: "emojis/symbols/green-heart.png"
               },
               {
-                emoji: "emojis/symbols/smiley-squinting.png"
+                emoji: "emojis/people/smiley-squinting.png"
               },
               {
                 emoji: "emojis/symbols/purple-heart.png"

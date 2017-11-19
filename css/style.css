@@ -22,14 +22,24 @@
   flex-wrap: wrap;
 }
 
-.title {
-  color: white;
-  text-align: center;
+/** Home Page **/
+
+.emoji-row img {
+  height: 100px;
+  width: 100px;
 }
 
 .start-btn {
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  width: 300px;
+  font-size: 30px;
+}
+
+/** Game Display **/
+
+.title {
+  color: white;
+  text-align: center;
 }
 
 .quiz-box {
@@ -52,6 +62,13 @@
 .info {
   font-family: Courier;
   font-weight: bold;
+}
+
+.info-mobile {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .answer-bar {
@@ -132,6 +149,8 @@
   outline: 0;
 }
 
+/** Results Page **/
+
 .emoji-results {
   height: 80px;
   width: 80px;
@@ -151,4 +170,18 @@
 .play-again:hover {
   background-color: #ED9B08;
   color: white;
+}
+
+/** Media Queries **/
+
+@media only screen and (max-width: 900px) {
+  .quiz-box {
+    width: 90%;
+  } .start-btn {
+    width: 70%;
+  } .buttons button {
+    width: 60%;
+  } .play-again {
+    width: 60%;
+  }
 }

@@ -1,7 +1,7 @@
 (function(){
 
     angular
-        .module("turtleFacts")
+        .module("moviemoji")
         .controller("listCtrl", ListController);
 
     ListController.$inject = ['quizMetrics', 'DataService'];
