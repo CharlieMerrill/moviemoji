@@ -86,15 +86,15 @@
         function randomQuote(){
           if(vm.correctCount > 5){
             var goodQuotes = ["Here's to looking at you, kid.", "May the Force be with you.",
-            "I think this is the beginning of a beautiful friendship", "Show me the money!",
+            "I think this is the beginning of a beautiful friendship.", "Show me the money!",
             "You had me at hello.", "Nobody puts baby in the corner!", "Carpe diem. Seize the day, boys. Make your lives extraordinary.",
-            "We're on a mission from god.", "I'm king of the world!"];
+            "We're on a mission from god.", "I'm king of the world!", "You deserve a vodka martini, shaken, not stirred."];
             vm.quote = goodQuotes[Math.floor(Math.random() * goodQuotes.length)];
           } else {
-            var badQuotes = ["What we've got here in failure to communicate!", "You're clearly not ready for your close-up.",
+            var badQuotes = ["What we've got here is failure to communicate!", "You're clearly not ready for your close-up.",
             "You can't handle the truth!", "You're gonna need a bigger boat.",
             "Well, nobody's perfect.", "Houston, we have a problem.", "Hasta la vista, baby.",
-            "Stupid is as stupid does.", "It's only a flesh wound.", "You coulda been a contener. You coulda been somebody.",
+            "Stupid is as stupid does.", "It's only a flesh wound.", "You coulda been a contender. You coulda been somebody.",
             "Inconceivable!", "You'll shoot your eye out.", "You're killing me smalls!", "YOU SHALL NOT PASS!"];
             vm.quote = badQuotes[Math.floor(Math.random() * badQuotes.length)];
           }

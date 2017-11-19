@@ -1837,7 +1837,7 @@
         {
             emojis: [
               {
-                emoji: "emojis/people/mechanic"
+                emoji: "emojis/people/mechanic.png"
               }
             ],
             selected: "",
@@ -1990,7 +1990,7 @@
         {
             emojis: [
               {
-                emoji: "emojis/nature/clock.png"
+                emoji: "emojis/objects/clock.png"
               },
               {
                 emoji: "emojis/travel/map.png"
@@ -2122,7 +2122,379 @@
             correct: null,
             correctAnswer: ["Noah", "noah"],
             answered: false
-        }
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/flags/usa.png"
+              },
+              {
+                emoji: "emojis/animals/wolf.png"
+              },
+              {
+                emoji: "emojis/symbols/right-arrow.png"
+              },
+              {
+                emoji: "emojis/flags/france.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["An American Werewolf in Paris", "an american werewolf in paris", "american werewolf in paris"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/symbols/white.png"
+              },
+              {
+                emoji: "emojis/animals/chick.png"
+              },
+              {
+                emoji: "emojis/animals/chick.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["White Chicks", "white chicks"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/animals/crocodile.png"
+              },
+              {
+                emoji: "emojis/animals/ox.png"
+              },
+              {
+                emoji: "emojis/animals/dog-face.png"
+              },
+              {
+                emoji: "emojis/animals/tiger.png"
+              },
+              {
+                emoji: "emojis/travel/house.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Animal House", "animal house"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/flags/uk.png"
+              },
+              {
+                emoji: "emojis/symbols/plus.png"
+              },
+              {
+                emoji: "emojis/flags/spain.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Spanglish", "spanglish"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/objects/pistol.png"
+              },
+              {
+                emoji: "emojis/objects/pistol.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["2 Guns", "2 guns", "two guns"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/animals/dove.png"
+              },
+              {
+                emoji: "emojis/animals/duck.png"
+              },
+              {
+                emoji: "emojis/animals/eagle.png"
+              },
+              {
+                emoji: "emojis/animals/owl.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["The Birds", "the birds", "birds"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/astronaut.png"
+              },
+              {
+                emoji: "emojis/symbols/right-arrow.png"
+              },
+              {
+                emoji: "emojis/people/bride.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["The Astronaut's Wife", "the astronaut's wife", "the astronauts wife", "astronauts wife", "astronaut's wife"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/nature/droplet.png"
+              },
+              {
+                emoji: "emojis/people/boy.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["The Waterboy", "the waterboy", "the water boy", "waterboy", "water boy"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/chef.png"
+              },
+              {
+                emoji: "emojis/animals/rat.png"
+              },
+              {
+                emoji: "emojis/objects/plate.png"
+              },
+              {
+                emoji: "emojis/flags/france.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Ratatouille", "ratatouille"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/objects/umbrella.png"
+              },
+              {
+                emoji: "emojis/people/woman.png"
+              },
+              {
+                emoji: "emojis/objects/handbag.png"
+              },
+              {
+                emoji: "emojis/flags/uk.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Mary Poppins", "mary poppins"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/objects/heart.png"
+              },
+              {
+                emoji: "emojis/people/angry-face.png"
+              },
+              {
+                emoji: "emojis/symbols/black-heart.png"
+              },
+              {
+                emoji: "emojis/people/screaming-face.png"
+              },
+              {
+                emoji: "emojis/symbols/blue-heart.png"
+              },
+              {
+                emoji: "emojis/people/tear-face.png"
+              },
+              {
+                emoji: "emojis/symbols/green-heart.png"
+              },
+              {
+                emoji: "emojis/symbols/smiley-squinting.png"
+              },
+              {
+                emoji: "emojis/symbols/purple-heart.png"
+              },
+              {
+                emoji: "emojis/people/unamused-face.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Inside Out", "inside out", "insideout"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/objects/snowflake.png"
+              },
+              {
+                emoji: "emojis/symbols/white.png"
+              },
+              {
+                emoji: "emojis/people/princess.png"
+              },
+              {
+                emoji: "emojis/symbols/plus.png"
+              },
+              {
+                emoji: "emojis/people/nerd.png"
+              },
+              {
+                emoji: "emojis/people/angry-face.png"
+              },
+              {
+                emoji: "emojis/people/sleepy.png"
+              },
+              {
+                emoji: "emojis/people/smiley-squinting.png"
+              },
+              {
+                emoji: "emojis/people/bashful.png"
+              },
+              {
+                emoji: "emojis/people/sneezy.png"
+              },
+              {
+                emoji: "emojis/people/crazy-face.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Snow White and the Seven Dwarfs", "snow white and the seven dwarfs", "snow white and the 7 dwarfs", "snow white and the seven dwarves", "snow white and the 7 dwarves", "snow white"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/sleepy.png"
+              },
+              {
+                emoji: "emojis/people/princess.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Sleeping Beauty", "sleeping beauty"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/woman-turban.png"
+              },
+              {
+                emoji: "emojis/people/princess-dark.png"
+              },
+              {
+                emoji: "emojis/people/genie.png"
+              },
+              {
+                emoji: "emojis/animals/monkey.png"
+              },
+              {
+                emoji: "emojis/objects/crystal-ball.png"
+              },
+              {
+                emoji: "emojis/travel/mosque.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Aladdin", "aladdin"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/swearing.png"
+              },
+              {
+                emoji: "emojis/objects/drum.png"
+              },
+              {
+                emoji: "emojis/people/bandage-face.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Whiplash", "whiplash", "whip lash"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/activities/swimmer.png"
+              },
+              {
+                emoji: "emojis/animals/shark.png"
+              },
+              {
+                emoji: "emojis/symbols/red.png"
+              },
+              {
+                emoji: "emojis/people/skull.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Jaws", "jaws"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/clown.png"
+              },
+              {
+                emoji: "emojis/objects/balloon.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["It", "it"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/symbols/dash.png"
+              },
+              {
+                emoji: "emojis/symbols/six.png"
+              },
+              {
+                emoji: "emojis/symbols/zero.png"
+              },
+              {
+                emoji: "emojis/objects/stopwatch.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Gone in 60 Seconds", "gone in 60 seconds", "gone in sixty seconds"],
+            answered: false
+        },
     ];
 
 })();
