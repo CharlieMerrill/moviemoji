@@ -1990,7 +1990,7 @@
         {
             emojis: [
               {
-                emoji: "emojis/objects/clock.png"
+                emoji: "emojis/objects/cloud.png"
               },
               {
                 emoji: "emojis/travel/map.png"
@@ -2495,6 +2495,34 @@
             correctAnswer: ["Gone in 60 Seconds", "gone in 60 seconds", "gone in sixty seconds"],
             answered: false
         },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/stopwatch.png"
+              },
+              {
+                emoji: "emojis/people/cop.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["Timecop", "timecop", "time cop", "time-cop"],
+            answered: false
+        },
+        {
+            emojis: [
+              {
+                emoji: "emojis/people/robot.png"
+              },
+              {
+                emoji: "emojis/people/cop.png"
+              }
+            ],
+            selected: "",
+            correct: null,
+            correctAnswer: ["RoboCop", "robocop", "robo cop", "robo-cop"],
+            answered: false
+        }
     ];
 
 })();
