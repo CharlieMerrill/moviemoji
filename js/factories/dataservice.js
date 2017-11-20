@@ -2498,7 +2498,7 @@
         {
             emojis: [
               {
-                emoji: "emojis/people/stopwatch.png"
+                emoji: "emojis/objects/stopwatch.png"
               },
               {
                 emoji: "emojis/people/cop.png"
