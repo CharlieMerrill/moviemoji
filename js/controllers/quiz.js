@@ -106,7 +106,7 @@
             "emojis/nature/clover.png", "emojis/objects/fireworks.png", "emojis/objects/medal.png",
             "emojis/objects/trophy.png", "emojis/objects/party.png", "emojis/people/nerd.png",
             "emojis/people/smiley-halo.png", "emojis/people/smiley-squinting.png", "emojis/people/smiley.png",
-            "emoji/people/star-eyes.png", "emojis/people/winking.png", "emojis/symbols/clapping.png",
+            "emojis/people/star-eyes.png", "emojis/people/winking.png", "emojis/symbols/clapping.png",
             "emojis/symbols/hundred-points.png", "emojis/symbols/ok-hand.png", "emojis/symbols/raising-hands.png",
             "emojis/symbols/thumbs-up.png"];
             vm.emoji1 = goodEmojis[Math.floor(Math.random() * goodEmojis.length)];
